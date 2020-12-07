@@ -131,6 +131,40 @@ img {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--accent-color-grey);
+  display: flex;
+  align-items: center;
+}
+
+.address {
+  display: flex;
+}
+
+.contact-info-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.contact-icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.contact-icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.contact-info:hover .contact-icon-mail,
+.contact-info:focus .contact-icon-mail {
+  fill: #2196f3;
+}
+
+.contact-info:hover .contact-icon-tel,
+.contact-info:focus .contact-icon-tel {
+  fill: #2196f3;
 }
 
 /* ========== HERO  ============= */
@@ -239,6 +273,20 @@ img {
   display: flex;
 }
 
+.about-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.about-icon-container {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 102px;
+}
+
 /* ===================== COMMAND ================== */
 
 .command {
@@ -322,6 +370,7 @@ img {
 .social-list-icon {
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
 }
 
 /* ========================= CLIENTS ==================== */
@@ -365,6 +414,10 @@ img {
 .clients-icon6 {
   width: 88px;
   height: 45px;
+}
+
+.clients-icon {
+  fill: #afb1b8;
 }
 
 .clients-list-link:hover .clients-icon,
@@ -463,6 +516,18 @@ img {
 .footer-social-list-icon {
   width: 20px;
   height: 20px;
+  fill: #ffffff;
+}
+
+.footer-container{
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-container{
+  width: 206px;
+height: 80px;
+margin-left: 70px;
 }
 
 /* =============== PORTFOLIO====================== */
@@ -499,6 +564,7 @@ img {
 .portfolio-list-btn:focus {
   color: var(--accent-color-white);
   background-color: var(--accent-color-blue);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .example-list {
@@ -531,3 +597,9 @@ img {
 .wrapper {
   margin-bottom: 30px;
 }
+
+.example-item:hover,
+.example-item:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
